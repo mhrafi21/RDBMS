@@ -10,6 +10,15 @@ create user user2 with encrypted password '12345678' // create user;
 
 give permission for user2 - grant select on table test_table to user2;
 
+Denied Permission
+-------------------------
+revoke select on table test_table from user2; // remove permission from this table;
+
+give permission all table;
+--------------------------
+grant all privileges on all tables in schema to user2; // from public schema default;
+
+
 
 
 
