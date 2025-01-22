@@ -1,0 +1,51 @@
+What is Anomalies?
+
+Ans: Anomalies in database refer to inconsistencies or unexpected issues that can occur during data manipulation or retrieval.
+
+There are three main types of anomalies. These are - 
+
+1. Update anomalies.
+2. Delete Anomalies.
+3. Insert Anomalies.
+
+We can remove anomalies using normalization.
+
+Normalization- 
+Functional Dependency(
+    Functional Dependency in simple terms means that the value of one attribute (or set of attribute) uniquely determines the value of another attribute(s) in a database table
+
+)
+Normal Forms(
+    A series of guidelines that help to ensure that the design of a database is efficient, organized, and free form data anomalies.
+)
+1NF has 6 rules. These are - 
+1. Atomic Values.
+2. Unique Column Names.
+3. Positional Dependency of data.
+4. Column should contain data that are of the same type.
+5. Determine Primary key.
+
+Serial_No Title Courses 
+
+11 Xton CN, OS
+12 Yton Java
+13 Zton C++, CN
+
+2NF Rules - 
+Must be in 1NF,
+Must not contain any non-prime/non-key attribute that is functionally dependent on a proper  subset of any candidate key of the relation.
+
+3NF Rules - 
+Must be 2NF 
+Must not contain transitive Dependency
+
+49.6 - Resolving Many To Many With Junction Table---
+
+Database design--- 
+Top-down steps-
+Determine Entities
+Determining attribute for each Entities
+Relationships Among Entities
+
+
+

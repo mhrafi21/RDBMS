@@ -1,0 +1,75 @@
+1.what is Database?
+Ans: A database is a structured collection of related data that represent some real world entities and are organized for efficient retrieval storage, and management.
+At first data stored in Dram Memory.(That's why database icon use like a dram.)
+
+2.What is Data?
+Ans: Data is facts that can be recorded in the form of different places. Data is everywhere.
+
+3.What is information?
+Ans: Information is processed and organized data that provides meaningful context, insight, or knowledge.
+
+4.What is DBMS(Database Management System)?
+Storing data Using File System.
+- Unstructured data, multiple, format,(.txt,mp4,etc)
+- data redundency,
+- data inconsistency,
+- No concurrency protocol,
+- Security issue,
+- Access complicatin 
+
+Database Model
+-----------------------------------------
+1. Hierarchical
+2. Network,
+3. Relational, MySql, PostGres SQL etc,
+4. Document, MongoDB,
+5. Key value - redis,
+
+Anatomy of A Table Relation --
+------------------------------------------
+1. Firstly add entity- (if E-commerce need user, product, order, category etc.) We can represent it by using table.
+Column is called Attribute.
+Degree ( Collection of column);
+Row is called Tuples/Records.
+Cardinality (Collection of Row);
+
+What is Key and Super Key?
+------------------------------------------
+Ans: A key in a relational database is a field or a combination of fields that uniquely identifiers a record in a table.
+
+1. Super Key (
+     - Attribute or set attribute by which we can identify each row uniquely. 
+     - It could be single attribute or set of attribute, Could have null values in the set.
+     -It actually superset
+     ) ,
+2. Candidate Key
+(
+    - Super key which proper subset is not a super key.
+    - Also called Minimal Super key.
+    - Potential Primary Key: From the candidate keys, one is chosen as the primary key. However, all candidate keys are potential choices for the primary key.
+), 
+3. Alternate Key,
+4. Composite Key,
+5. Primary Key,
+6. Foreign Key,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

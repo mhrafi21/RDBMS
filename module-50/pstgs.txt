@@ -1,0 +1,15 @@
+1.select all from table;
+select * from test_table;
+
+--give permission--
+grant all privileges on table test_table to user1;
+
+2. insert into test_table(name) values("rafi") // insert data;
+
+create user user2 with encrypted password '12345678' // create user;
+
+give permission for user2 - grant select on table test_table to user2;
+
+
+
+
