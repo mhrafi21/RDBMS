@@ -13,6 +13,8 @@ SQL is a declarative Language. just give command and get the work done;
 SQL commands - 
 
 DDL           DML              DCL       TCL         DQL
+---------------------------------------------------------
 CREATE        INSERT,          GRANT     COMMIT     SELECT
 DROP ALTER    UPDATE,          REVOKE    ROLLBACK
 TRUNCATE      DELETE                     SAVEPOINT
+
