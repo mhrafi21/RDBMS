@@ -2,3 +2,17 @@ Structured Query Language
 -------------------------
 
 working on relational database.
+
+imperative and declarative --
+
+imperative - need to say all what we want;
+declarative - no need to say implementation details. just say;
+
+SQL is a declarative Language. just give command and get the work done;
+
+SQL commands - 
+
+DDL           DML              DCL       TCL         DQL
+CREATE        INSERT,          GRANT     COMMIT     SELECT
+DROP ALTER    UPDATE,          REVOKE    ROLLBACK
+TRUNCATE      DELETE                     SAVEPOINT
