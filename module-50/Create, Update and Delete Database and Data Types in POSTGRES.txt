@@ -16,3 +16,6 @@ Data Consistency , Convenience and Functionality, Performance, Storage Efficienc
 
 Postgres data types-
 Boolean, Numbers, Binary, Data/Time, JSON, Character, UUID, Array, XML
+
+Boolean - true, false, null
+Integers - INT, BIGINT, SMALLINT, FLOAT4, FLOAT8, NUMERIC, Serial
