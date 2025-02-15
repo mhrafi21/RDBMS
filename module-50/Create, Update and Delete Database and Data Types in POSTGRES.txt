@@ -1,7 +1,7 @@
 create database in postgres
 ---------------------------
-create database test(database name);
-
+create database test;
+see database: \l
 database update 
 ----------------
 alter database test rename to ph;
@@ -9,7 +9,8 @@ see database list: \l;
 
 delete database 
 ----------------
-drop database test
+drop database test;
+
 
 
 
