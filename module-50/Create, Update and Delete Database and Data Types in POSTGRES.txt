@@ -19,3 +19,6 @@ Boolean, Numbers, Binary, Data/Time, JSON, Character, UUID, Array, XML
 
 Boolean - true, false, null
 Integers - INT, BIGINT, SMALLINT, FLOAT4, FLOAT8, NUMERIC, Serial
+Characters - CHAR, VARCHAR, TEXT
+Date - T:HH:MM:SS
+UUID - Universal Unique Identifier
