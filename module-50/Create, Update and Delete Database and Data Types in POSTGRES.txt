@@ -11,6 +11,8 @@ delete database
 ----------------
 drop database test;
 
+Data Consistency , Convenience and Functionality, Performance, Storage Efficiency, Constraint Enforcement
 
 
-
+Postgres data types-
+Boolean, Numbers, Binary, Data/Time, JSON, Character, UUID, Array, XML
