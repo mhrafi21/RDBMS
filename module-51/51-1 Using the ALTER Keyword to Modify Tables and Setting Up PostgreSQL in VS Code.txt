@@ -1,0 +1,13 @@
+// ALTER - modify tables
+
+ALTER TABLE table_name
+
+-Rename a table 
+- modify data type of a columns
+- Add/drop columns
+- Settings default value for a columns
+- Rename a column 
+- Add/Drop constraints for a columns
+
+
+

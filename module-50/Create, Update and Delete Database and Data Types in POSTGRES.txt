@@ -64,3 +64,6 @@ INSERT INTO employees (first_name, last_name, hire_date) VALUES
 ("jane", "SMITH", 30),
 ("jan", "SMITHr", 30),
 
+--- Assuming the table has columns (id, name, age) 
+
+INSERT INTO persons VALUES(1,'john doe', 38)
