@@ -16,3 +16,18 @@ ALTER TABLE person2
 -- rename column field name;
 ALTER TABLE person2
       RENAME age to user_age;
+
+-- data type change 
+
+ALTER TABLE person2
+      ALTER COLUMN first_name type VARCHAR(30);
+
+-- add constraints (existing column);
+
+ALTER TABLE person2
+        ALTER COLUMN user_age set NOT NULL;
+
+-- remove constraints 
+
+ALTER TABLE person2
+        ALTER COLUMN user_age    NOT NULL;
