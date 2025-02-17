@@ -6,7 +6,6 @@ database update
 ----------------
 alter database test rename to ph;
 see database list: \l;
-
 delete database 
 ----------------
 drop database test;
@@ -22,3 +21,46 @@ Integers - INT, BIGINT, SMALLINT, FLOAT4, FLOAT8, NUMERIC, Serial
 Characters - CHAR, VARCHAR, TEXT
 Date - T:HH:MM:SS
 UUID - Universal Unique Identifier
+
+
+// Creating a table with multiple columns and Column constraints
+
+CREATE TABLE example (
+    id SERIAL PRIMARY KEY,
+    email VARCHAR(255) unique
+)
+
+CREATE TABLE orders(
+    order_id SERIAL PRIMARY KEY,
+    customer_id: INTEGER REFERENCES customers(custom_id);
+);
+
+create table example (
+    id serial primary key,
+    age integer CHECK (age >= 18)
+)
+
+// Different Methods to Define Constraints;
+
+CREATE TABLE person3(
+    id serial,
+    user_name VARCHAR(30) NOT NULL,
+    age INTEGER CHECK (age >= 18),
+    PRIMARY KEY(id,user_name),
+    UNIQUER(user_name, age)
+)
+
+// Inserting data into a table and checking constraints
+
+single-row-insert 
+
+INSERT INTO table_name() values()
+
+INSERT INTO employees (first_name, last_name, hire_date) VALUES("Mahdi", "Rafi", 2024-01-03);
+
+multiple-rows insert;
+
+INSERT INTO employees (first_name, last_name, hire_date) VALUES
+("jane", "SMITH", 30),
+("jan", "SMITHr", 30),
+
