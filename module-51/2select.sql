@@ -34,3 +34,10 @@ INSERT INTO students (first_name, last_name, age, grade, course, email, dob, blo
 ('Evelyn', 'Adams', 19, 'A', 'Nursing', 'evelyn.adams@example.com', '2005-08-01', 'B-', 'Japan');
 
 SELECT * FROM students ORDER BY age DESC;
+SELECT * FROM students WHERE country = 'USA';
+SELECT * FROM students WHERE age > 22;
+SELECT * FROM students WHERE age < 20;
+SELECT * FROM students WHERE age BETWEEN 20 AND 22;
+SELECT * FROM students WHERE country = 'USA' AND age > 22;
+SELECT * FROM students WHERE country = 'USA' OR country = 'UK';
+SELECT * FROM students WHERE country = 'USA' AND age > 22 OR country = 'UK';
