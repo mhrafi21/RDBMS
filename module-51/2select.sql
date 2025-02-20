@@ -33,4 +33,4 @@ INSERT INTO students (first_name, last_name, age, grade, course, email, dob, blo
 ('Henry', 'Green', 25, 'B-', 'Astronomy', 'henry.green@example.com', '1999-12-20', 'O-', 'New Zealand'),
 ('Evelyn', 'Adams', 19, 'A', 'Nursing', 'evelyn.adams@example.com', '2005-08-01', 'B-', 'Japan');
 
-SELECT * FROM students ORDER BY age ASC;
+SELECT * FROM students ORDER BY age DESC;
