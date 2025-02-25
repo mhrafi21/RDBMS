@@ -93,3 +93,16 @@ SELECT * FROM students WHERE first_name LIKE 'J%';  -- % is wildcard character g
 SELECT * FROM students WHERE first_name LIKE 'J___';  -- % is wildcard character give all names starting with J and 3 
 SELECT * FROM students WHERE first_name ILIKE 'j%';  -- % is wildcard character give all names starting with J; case insensitive
 SELECT * FROM students WHERE first_name ILIKE 'j___';  -- % is wildcard character give all names starting with J and 3
+
+-- Pagination with Limit Offset and Data Deletion in PostgreSQL
+
+SELECT * FROM students LIMIT 5; -- give first 5 records
+SELECT * FROM students LIMIT 5 OFFSET 5 * 0;
+SELECT * FROM students LIMIT 5 OFFSET 5 * 1; -- give next 5 records
+SELECT * FROM students LIMIT 5 OFFSET 5 * 2; -- give next 5 records
+
+SELECT * FROM students;
+DELETE FROM students WHERE student_id = 1;
+
+-- Updating Data in PostgreSQL
+UPDATE students SET email = 'default@gmal.com' WHERE student_id = 20;
