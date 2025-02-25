@@ -77,3 +77,5 @@ SELECT * FROM students WHERE NOT country = 'USA';
 SELECT * FROM students WHERE country <> 'USA';
 
 SELECT * FROM students WHERE email IS  NULL;
+
+SELECT  COALESCE(email, 'EMAIL IS NOT PROVIDED!') as "Email", blood_group FROM students 
