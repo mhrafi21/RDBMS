@@ -41,3 +41,39 @@ SELECT * FROM students WHERE age BETWEEN 20 AND 22;
 SELECT * FROM students WHERE country = 'USA' AND age > 22;
 SELECT * FROM students WHERE country = 'USA' OR country = 'UK';
 SELECT * FROM students WHERE country = 'USA' AND age > 22 OR country = 'UK';
+
+
+-- Exploring Scalar and Aggregate Functions
+
+--Scaler functions
+
+UPPER(), LOWER, CONCAT(),LENGTH -- used too much
+UPPER(), LOWER, CONCAT(), LENGTH(), TRIM(), SUBSTRING(), REPLACE(), REVERSE(), ROUND(), CEIL(), FLOOR(), ABS(), MOD(), SQRT(), POWER(), RANDOM(), NOW(), CURRENT_DATE, CURRENT_TIME, CURRENT_TIMESTAMP
+
+
+SELECT upper(first_name) from students WHERE country = 'USA';
+SELECT lower(first_name) from students WHERE country = 'USA';
+SELECT concat(first_name, ' ', last_name) from students WHERE country = 'USA';
+SELECT length(first_name) from students WHERE country = 'USA';
+
+SELECT trim('   Hello World   ');
+SELECT substring('Hello World', 1, 5);  -- Hello
+SELECT replace('Hello World', 'World', 'Universe');  -- Hello Universe
+-- aggregate functions
+
+COUNT(), SUM(), AVG(), MIN(), MAX()
+
+SELECT COUNT(*) FROM students;
+SELECT COUNT(DISTINCT country) FROM students;
+SELECT SUM(age) FROM students;
+SELECT AVG(age) FROM students;
+SELECT MIN(age) FROM students;
+SELECT MAX(age) FROM students;
+
+
+-- Logical Negation NOT, Understanding NULL And The coalescing Operator in POSTGRESQL
+
+SELECT * FROM students WHERE NOT country = 'USA';
+SELECT * FROM students WHERE country <> 'USA';
+
+SELECT * FROM students WHERE email IS  NULL;
