@@ -79,3 +79,17 @@ SELECT * FROM students WHERE country <> 'USA';
 SELECT * FROM students WHERE email IS  NULL;
 
 SELECT  COALESCE(email, 'EMAIL IS NOT PROVIDED!') as "Email", blood_group FROM students 
+
+
+-- Exploring the IN and NOT IN, lIKE, ILIKE Operators in POSTGRESQL
+
+
+SELECT * FROM students WHERE age = 21 or age = 22 or age = 23 ;
+SELECT * FROM students WHERE age IN(20,21,22); -- instead of OR operator use IN operator for shortcut 
+
+SELECT * FROM students WHERE age NOT IN(20,21,22); -- instead of OR operator use IN operator for shortcut
+
+SELECT * FROM students WHERE first_name LIKE 'J%';  -- % is wildcard character give all names starting with J; case sensitive
+SELECT * FROM students WHERE first_name LIKE 'J___';  -- % is wildcard character give all names starting with J and 3 
+SELECT * FROM students WHERE first_name ILIKE 'j%';  -- % is wildcard character give all names starting with J; case insensitive
+SELECT * FROM students WHERE first_name ILIKE 'j___';  -- % is wildcard character give all names starting with J and 3
