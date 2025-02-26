@@ -117,9 +117,19 @@ SELECT NOW()::DATE;
 SELECT CURRENT_DATE;
 SELECT to_char(now(), 'YYYY-MM-DD HH12:MI:SS');
 SELECT to_char(now(), 'YYYY-MM-DD');
-
+SELECT to_char(now(),"DDD");
 SELECT CURRENT_TIME;
 SELECT CURRENT_TIMESTAMP;
 SELECT EXTRACT(YEAR FROM dob) as year, 
 EXTRACT(MONTH FROM dob) as month,
 EXTRACT(DAY FROM dob) as day FROM students;
+
+SELECT CURRENT_DATE - INTERVAL '1 YEAR 2 months';
+SELECT age(CURRENT_DATE, '2002-05-14') as age;
+SELECT *, age(CURRENT_DATE, dob) as age FROM students;
+
+SELECT '0'::Boolean;
+
+SELECT age, count(*), avg(age) FROM students GROUP BY age;
+
+SELECT age, count(*), avg(age) FROM students GROUP BY age HAVING avg(age) > 21;
