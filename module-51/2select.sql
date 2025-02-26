@@ -106,3 +106,20 @@ DELETE FROM students WHERE student_id = 1;
 
 -- Updating Data in PostgreSQL
 UPDATE students SET email = 'default@gmal.com' WHERE student_id = 20;
+
+
+
+-- Handling Date and Date Functions in PostgreSQL
+
+SHOW timezone;
+SELECT NOW();
+SELECT NOW()::DATE;
+SELECT CURRENT_DATE;
+SELECT to_char(now(), 'YYYY-MM-DD HH12:MI:SS');
+SELECT to_char(now(), 'YYYY-MM-DD');
+
+SELECT CURRENT_TIME;
+SELECT CURRENT_TIMESTAMP;
+SELECT EXTRACT(YEAR FROM dob) as year, 
+EXTRACT(MONTH FROM dob) as month,
+EXTRACT(DAY FROM dob) as day FROM students;
